@@ -45,7 +45,7 @@ const Form = () => {
   return (
     <form onSubmit={handleSubmit}>
       <div>
-        <label>Name:</label>
+        <label htmlFor="name">Name:</label>
         <input
           type="text"
           name="name"
@@ -55,7 +55,7 @@ const Form = () => {
         {errors.name && <span>{errors.name}</span>}
       </div>
       <div>
-        <label>Email:</label>
+        <label htmlFor="email">Email:</label>
         <input
           type="email"
           name="email"
@@ -65,7 +65,7 @@ const Form = () => {
         {errors.email && <span>{errors.email}</span>}
       </div>
       <div>
-        <label>Phone:</label>
+        <label htmlFor="phone">Phone:</label>
         <input
           type="text"
           name="phone"
@@ -75,7 +75,7 @@ const Form = () => {
         {errors.phone && <span>{errors.phone}</span>}
       </div>
       <div>
-        <label>Password:</label>
+        <label htmlFor="password">Password:</label>
         <input
           type="password"
           name="password"
@@ -85,7 +85,7 @@ const Form = () => {
         {errors.password && <span>{errors.password}</span>}
       </div>
       <div>
-        <label>Confirm Password:</label>
+        <label htmlFor="confirmPassword">Confirm Password:</label>
         <input
           type="password"
           name="confirmPassword"
